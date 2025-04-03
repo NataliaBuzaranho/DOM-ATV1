@@ -22,13 +22,19 @@ console.log(judo[0].textContent);
 let ballet = document.getElementsByClassName("ba");
 console.log(ballet[0].textContent);
 
+let lista = document.getElementsByTagName("li");
+console.log(lista);
+
 let tituloQS = document.querySelector("#titulo");
+console.log(lista);
+
 let listaQS = document.querySelector(".fut");
 let lista2QS = document.querySelector(".bas");
 let lista3QS = document.querySelector(".vol");
 let lista4QS = document.querySelector(".ten");
 let lista5QS = document.querySelector(".jud");
 let lista6QS = document.querySelector(".ba");
+
 
 console.log("Exibindo com Query Selector" + tituloQS.textContent);
 console.log("Exibindo com QS a lista" + listaQS.textContent);
@@ -37,3 +43,15 @@ console.log("Exibindo com QS a lista" + lista3QS.textContent);
 console.log("Exibindo com QS a lista" + lista4QS.textContent);
 console.log("Exibindo com QS a lista" + lista5QS.textContent);
 console.log("Exibindo com QS a lista" + lista6QS.textContent);
+
+
+titulo.innerHTML = "<span style='color:blue' >Meus Esportes Favoritos </span>";
+
+let novoli = document.createElement("li");
+novoli.innerText = "Patinação ⛸️";
+
+let novoli2 = document.createElement("li");
+novoli2.innerText = "Hóquei 🏒";
+
+document.body.appendChild(novoli);
+document.body.appendChild(novoli2);
